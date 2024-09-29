@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+h1 {
+    text-align: center;
+    margin: 2vw;
+    font-size: 2em;
+}
+
+table {
+    margin-left: 2vw;
+    margin-right: 2vw;
+    width: 96vw;
+    font-size: 1.1em;
+    text-align: center;
+    border-spacing: 0;
+}
+
+th {
+    background-color: rgb(59, 56, 218);
+    color: rgb(235, 229, 229);
+    padding: 1vw;
+}
+
+th, td{ border: 0.1vw solid black; }
+
+td {background-color: rgb(238, 237, 234);}
+
+th:first-child {
+    border-radius: 1.5vw 0 0 0;
+}
+
+th:last-child {
+    border-radius: 0 1.5vw 0 0;
+}
+
+.last-left { border-radius: 0 0 0 1.5vw; }
+
+.last-right {border-radius: 0 0 1.5vw 0;}
+
+
+
+img {
+    width: 100%;
+}

@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: rgb(238, 238, 238);
+    font-family: "Inter", sans-serif;
+}
+
+p {
+    text-indent: 2vw;
+}
+
+
+header {
+    display: block;
+    width: 100%;
+    height: 4vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    min-height: 40px;
+}
+
+#logo {
+    width: 3vw;
+    margin: 0.5vw;
+}
+
+.menu {
+    position: relative;
+    display: inline-block;
+    margin-left: 2vw;
+    margin-top: 1.3vw;
+    font-size: 1.25vw;
+}
+
+.ULmenu {
+    margin-right: 1.04vw;
+    float: right;
+}
+
+main {
+    font-size: 1.25vw;
+    padding-top: calc(3vw + 4vh);
+}
+
+#books {
+    float: right;
+    width: 45vw;
+    border: 0.5vw solid white;
+}
+
+.historyText {
+    text-align: justify;
+    float: left;
+    display: block;
+    width: 48vw;
+    white-space: pre-wrap;
+}
+
+.history {
+    padding: 1.04vw;
+}
+
+h2 {
+    font-size: 2.08vw;
+    text-align: center;
+    margin-bottom: 1.04vw;
+}
+
+h1 {
+    font-size: 3.3vw;
+    text-align: center;
+    display: block;
+}
+
+.Heroes {
+    width: 100%;
+    margin-top: calc(29vw + 2vh);
+    overflow:auto;
+}
+
+
+ol {
+    display: inline-block;
+    list-style-type: decimal;
+    width: 55vw;
+    margin-bottom: 10vw;
+}
+
+.IntFactLI {
+    margin-left: 3.5vw;
+}
+
+#portriet {
+    width: 35vw;
+    float: right;
+    margin-right: 1.08vw;
+    border: 0.5vw solid white;
+}
+
+.IntFacts {
+    margin-top: 0.6vw;
+}
+
+body {
+    background-image: url(../../img/harryPotter/background.png);
+    background-repeat: repeat;
+    background-size: 100vh;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3f3d3d;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: rgb(238, 238, 238);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: 500ms;
+}
+
+
+.dropdown-content a:hover {
+    background-color: #e2dede;
+    color: rgb(46, 45, 45)
+}
+
+.dropdown:hover .dropdown-content, .dropdown:active .dropdown-content{
+    display: block;
+}
+
+.opr { text-decoration:underline; transition: 200ms;}
+.opr:active { color: none; }
+.opr:hover {color:#7a7373}
+
+.source {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 2vw;
+    
+}
+
+.sourcebtn{ transition: 200ms; }
+.sourcebtn:active { color: none; }
+.sourcebtn:hover {color:#4b4848}
+
+.mainmenu:active { color: none}
+.mainmenu { text-decoration: none; }
+
+.mainHero {
+    display: none;
+} 
+
+@media (max-width: 800px) {
+
+    h1 {
+        font-size: 6vh;
+    }
+
+    h2 {
+        font-size: 3vh;
+        margin-bottom: 1.5vh;
+    }
+
+    header {
+        display: block;
+        width: 100%;
+        height: 5vh;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    #logo {
+        width: 5vh;
+    }
+
+    .menu {
+        position: relative;
+        display: inline-block;
+        margin-left: 1vh;
+        margin-top: 1.1vh;
+        font-size: calc(1.3vh + 1vw);
+    }
+
+    .ULmenu {
+        margin-right: 1.5vh;
+        float: right;
+    }
+
+    main {
+        font-size: calc(1.3vh + 1vw);
+        padding-top: calc(4vh + 5vw);
+    }
+
+    .historyText {
+        text-align: justify;
+        display: block;
+        width: 95%;
+        margin-left: 2.5%;
+        white-space: pre-wrap;
+        margin-bottom: 1vh;
+    }
+
+    #books {
+        width: 100%;
+        border: none;
+        margin: 0;
+        padding: 0;
+        float:none;
+    }
+
+    .Heroes {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    #heroes {
+        display: none;
+        width: 100%;
+    }
+
+    #mapHeroes {
+        display: none;
+    }
+
+    .mainHero {
+        display: inline-block;   
+        width: 45%;
+    }
+
+    .mainHero:last-child {
+        margin-left: 23%;
+    }
+
+
+    .Img {
+        display: block;
+    }
+
+    #Germione {
+        display: block;
+        width: 100%;
+    }
+
+    .mobImg {
+        display: block;
+        margin-left: 10%;
+    }
+
+    .mobImg:last-child {
+        margin-left: 30%;
+    }
+
+    #portriet {
+        display: none;
+    }
+
+    ol {
+        width: 95%;
+        text-align: justify;
+        margin-left: calc(2.5% + 1vw);
+    }
+
+    .source {
+        height: 5vh;
+    }
+
+}

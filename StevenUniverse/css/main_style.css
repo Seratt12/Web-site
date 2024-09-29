@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    font-family: "Montserrat Alternates", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    background-image: url(../../img/stevenUniverse/PCBackgroundMain.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+header {
+    display: block;
+    width: 100%;
+    height: 7.407vh;
+    min-height: 60px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#logo {
+    display: inline-block;
+    height: 5.55vh;
+    padding-top: 0.92vh;
+    padding-left: 0.52vw;
+}
+
+.list {
+    display: block;
+    width: 50vw;
+    float: right;
+    padding-right: 1.04vw;
+    padding-top: 2.5vh;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    font-size: 2.2vh;
+}
+
+li {
+    padding-right: 1.04vw;
+}
+
+a:active {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    display: block;
+    font-size: 1.25em;
+    width: 45.46875vw;
+    height: 46.25vh;
+    text-align: justify;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 9.29vh;
+    box-shadow: 0px 4px 24px 15px rgba(0, 0, 0, 0.25);
+    margin-top: 5.1vh;
+    margin-left: 2.86vw;
+    overflow: hidden;
+}
+
+h1 {
+    display: block;
+    font-size: 4.4vh;
+    text-align: center;
+}
+
+p {
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 2.2vh;
+}
+
+.text {
+    width: 100%;
+    padding-right: 1vw;
+    height: 40vh;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+/* Стили для скроллбара в WebKit-браузерах */
+.text::-webkit-scrollbar {
+    width: 7px; /* Ширина скроллбара */
+    border-radius: 5px;
+}
+  
+.text::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1); /* Цвет фона трека */
+    border-radius: 10px; /* Закругление углов трека */
+}
+  
+.text::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5); /* Цвет ползунка */
+    border-radius: 10px; /* Закругление углов ползунка */
+}
+  
+.text::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.7); /* Цвет ползунка при наведении */
+}
