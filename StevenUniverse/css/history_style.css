@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    font-family: "Montserrat Alternates", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+body {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    background-attachment: fixed;
+    background-image: url(../../img/stevenUniverse/PCBackgroundMain.jpg);
+}
+
+header {
+    display: block;
+    width: 100%;
+    height: 7.407vh;
+    min-height: 60px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#logo {
+    display: inline-block;
+    height: 5.55vh;
+    padding-top: 0.92vh;
+    padding-left: 0.52vw;
+}
+
+.list {
+    display: block;
+    width: 50vw;
+    float: right;
+    padding-right: 1.04vw;
+    padding-top: 2.5vh;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    font-size: 2.2vh;
+}
+
+li {
+    padding-right: 1.04vw;
+}
+
+a:active {
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    display: block;
+    font-size: 1.25em;
+    text-align: justify;
+    padding: 0 20px;
+}
+
+#portriet {
+    width: 35%;
+    margin-left: 32.5%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    display: block;
+}
+
+.persons {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    display: block;
+}
+
+#bubl {
+    width: 20vw;
+    margin-left: 40vw;
+}
+
+.text {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.65);
+    border-radius: 25px;
+    padding: 25px;
+    margin: 0 9%;
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 2.2vh;
+}
+
+
+@media (max-width: 1130px) { 
+
+    ul {
+        font-size: calc(8px + 1vh);
+        text-align: center;
+    }
+
+    .portriet {
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        display: block;
+    }
+}
+
+@media (max-width: 575px) {
+
+    ul {
+        align-content: stretch;
+    }
+
+    header {
+        width: 100%;
+    }
+}

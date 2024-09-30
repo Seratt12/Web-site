@@ -114,3 +114,72 @@ p {
 .text::-webkit-scrollbar-thumb:hover {
     background: rgba(255, 255, 255, 0.7); /* Цвет ползунка при наведении */
 }
+
+#mobileImg {
+    width: 0;
+}
+
+@media (max-width: 1130px) { 
+
+    ul {
+        font-size: 2vh;
+        text-align: center;
+    }
+
+    body { 
+        background-image: none;
+        background-color: rgba(179, 176, 223, 0.6);
+    }
+
+    * {
+        color: black;
+    }
+
+    main {
+        display: block;
+        height: 100%;
+        width: 100%;
+        box-shadow: none;
+        background-color: rgba(255, 255, 255, 0);
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        border-radius: 0;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    header {
+        background-color: rgba(0, 0, 0, 0);
+        height: 10vh;
+    }
+
+
+    #mobileImg {
+        display: block;
+        width: 100%;
+    }
+
+    .text {
+        height: 100%;
+        width: calc(100% - 3vh);
+        display: block;
+        margin-left: 1.5vh;
+    }
+}
+
+@media (max-width: 575px) {
+    #logo {
+        width: 0;
+    }
+
+    ul {
+        align-content: stretch;
+    }
+
+    header {
+        width: 100%;
+    }
+}
